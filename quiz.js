@@ -1,304 +1,119 @@
 // Quiz data for each topic
 const quizzes = {
+  // ...existing code...
   dataEngineering: {
     title: "What is Data Engineering?",
     questions: [
+      // Unique questions only (duplicates removed and replaced)
       {
-        q: "Which phase of the data lifecycle involves making data available to end users or applications?",
+        q: "What is the primary goal of data engineering?",
         options: [
-          "Data Delivery",
-          "Data Acquisition",
-          "Data Profiling",
-          "Data Masking"
+          "To make quality data available for analysis and decision-making",
+          "To design user interfaces",
+          "To write documentation",
+          "To create marketing materials"
         ],
         answer: 0,
-        explanation: "Data Delivery is the phase where data is made available to end users or applications."
+        explanation: "The main goal of data engineering is to make quality data available for analysis and business decision-making."
       },
       {
-        q: "Which of the following is a key activity in the data retention phase?",
+        q: "Which of the following best describes ETL in data engineering?",
         options: [
-          "Defining how long data should be stored",
-          "Drawing data",
-          "Encrypting data",
-          "Cooking data"
+          "Extract, Transform, Load",
+          "Encrypt, Transfer, Log",
+          "Edit, Test, Launch",
+          "Evaluate, Train, Learn"
         ],
         answer: 0,
-        explanation: "Data retention involves defining how long data should be stored before deletion."
+        explanation: "ETL stands for Extract, Transform, Load, which are key steps in data integration."
       },
       {
-        q: "Which of the following is a benefit of data archiving in the lifecycle?",
+        q: "Which tool is commonly used for data pipeline orchestration?",
         options: [
-          "Reducing storage costs for infrequently accessed data",
-          "Making data colorful",
-          "Drawing charts",
-          "Sending emails"
+          "Apache Airflow",
+          "Microsoft Word",
+          "Adobe Photoshop",
+          "Google Chrome"
         ],
         answer: 0,
-        explanation: "Data archiving reduces storage costs for infrequently accessed data."
+        explanation: "Apache Airflow is a popular tool for orchestrating data pipelines."
       },
       {
-        q: "Which of the following is a data cleansing activity?",
+        q: "What is data ingestion?",
         options: [
-          "Removing duplicate records",
-          "Drawing data",
-          "Encrypting data",
-          "Cooking data"
+          "The process of collecting and importing data for use or storage",
+          "The process of deleting data",
+          "The process of encrypting data",
+          "The process of visualizing data"
         ],
         answer: 0,
-        explanation: "Removing duplicate records is a common data cleansing activity."
+        explanation: "Data ingestion is the process of collecting and importing data for use or storage."
       },
       {
-        q: "Which of the following is a benefit of data anonymization?",
+        q: "Which of the following is a data storage technology?",
         options: [
-          "Protecting sensitive information while retaining data utility",
-          "Making data colorful",
-          "Drawing charts",
-          "Sending emails"
+          "Amazon S3",
+          "Microsoft Excel",
+          "Adobe Illustrator",
+          "Slack"
         ],
         answer: 0,
-        explanation: "Data anonymization protects sensitive information while retaining data utility."
+        explanation: "Amazon S3 is a widely used data storage technology."
       },
       {
-        q: "Which of the following is a key output of the data processing phase?",
+        q: "Which language is commonly used for data engineering tasks?",
         options: [
-          "Transformed, analytics-ready data",
-          "Handwritten notes",
-          "Printed books",
-          "Colorful charts"
+          "Python",
+          "French",
+          "HTML",
+          "CSS"
         ],
         answer: 0,
-        explanation: "The data processing phase produces transformed, analytics-ready data."
+        explanation: "Python is a popular language for data engineering tasks."
       },
       {
-        q: "Which of the following is a benefit of data validation in the lifecycle?",
+        q: "What is data transformation?",
         options: [
-          "Ensuring data accuracy and consistency",
-          "Making data colorful",
-          "Drawing charts",
-          "Sending emails"
+          "The process of converting data from one format or structure to another",
+          "The process of deleting data",
+          "The process of encrypting data",
+          "The process of visualizing data"
         ],
         answer: 0,
-        explanation: "Data validation ensures that data is accurate and consistent."
+        explanation: "Data transformation is converting data from one format or structure to another."
       },
       {
-        q: "Which of the following is a data governance activity in the lifecycle?",
+        q: "Which of the following is a benefit of data partitioning?",
         options: [
-          "Defining data access policies and compliance requirements",
-          "Drawing data",
-          "Encrypting data",
-          "Cooking data"
+          "Improved query performance and manageability",
+          "Increased data redundancy",
+          "Reduced data security",
+          "Slower data access"
         ],
         answer: 0,
-        explanation: "Data governance includes defining data access policies and compliance requirements."
+        explanation: "Data partitioning improves query performance and manageability."
       },
       {
-        q: "Which of the following is a benefit of data monitoring in the lifecycle?",
+        q: "What is a data warehouse?",
         options: [
-          "Tracking data pipeline health and performance",
-          "Drawing data",
-          "Encrypting data",
-          "Cooking data"
+          "A system used for reporting and data analysis",
+          "A tool for drawing charts",
+          "A type of email server",
+          "A programming language"
         ],
         answer: 0,
-        explanation: "Data monitoring helps track the health and performance of data pipelines."
-      },
-      {
-        q: "Which of the following is a key reason for data compliance in the lifecycle?",
-        options: [
-          "Adhering to legal and regulatory requirements",
-          "Faster data processing",
-          "More emails",
-          "Better handwriting"
-        ],
-        answer: 0,
-        explanation: "Data compliance ensures adherence to legal and regulatory requirements."
-      },
-      {
-        q: "Which phase of the data lifecycle involves making data available to end users or applications?",
-        options: [
-          "Data Delivery",
-          "Data Acquisition",
-          "Data Profiling",
-          "Data Masking"
-        ],
-        answer: 0,
-        explanation: "Data Delivery is the phase where data is made available to end users or applications."
-      },
-      {
-        q: "Which of the following is a key activity in the data retention phase?",
-        options: [
-          "Defining how long data should be stored",
-          "Drawing data",
-          "Encrypting data",
-          "Cooking data"
-        ],
-        answer: 0,
-        explanation: "Data retention involves defining how long data should be stored before deletion."
-      },
-      {
-        q: "Which of the following is a benefit of data archiving in the lifecycle?",
-        options: [
-          "Reducing storage costs for infrequently accessed data",
-          "Making data colorful",
-          "Drawing charts",
-          "Sending emails"
-        ],
-        answer: 0,
-        explanation: "Data archiving reduces storage costs for infrequently accessed data."
-      },
-      {
-        q: "Which of the following is a data cleansing activity?",
-        options: [
-          "Removing duplicate records",
-          "Drawing data",
-          "Encrypting data",
-          "Cooking data"
-        ],
-        answer: 0,
-        explanation: "Removing duplicate records is a common data cleansing activity."
-      },
-      {
-        q: "Which of the following is a benefit of data anonymization?",
-        options: [
-          "Protecting sensitive information while retaining data utility",
-          "Making data colorful",
-          "Drawing charts",
-          "Sending emails"
-        ],
-        answer: 0,
-        explanation: "Data anonymization protects sensitive information while retaining data utility."
-      },
-      {
-        q: "Which of the following is a key output of the data processing phase?",
-        options: [
-          "Transformed, analytics-ready data",
-          "Handwritten notes",
-          "Printed books",
-          "Colorful charts"
-        ],
-        answer: 0,
-        explanation: "The data processing phase produces transformed, analytics-ready data."
-      },
-      {
-        q: "Which of the following is a benefit of data validation in the lifecycle?",
-        options: [
-          "Ensuring data accuracy and consistency",
-          "Making data colorful",
-          "Drawing charts",
-          "Sending emails"
-        ],
-        answer: 0,
-        explanation: "Data validation ensures that data is accurate and consistent."
-      },
-      {
-        q: "Which of the following is a data governance activity in the lifecycle?",
-        options: [
-          "Defining data access policies and compliance requirements",
-          "Drawing data",
-          "Encrypting data",
-          "Cooking data"
-        ],
-        answer: 0,
-        explanation: "Data governance includes defining data access policies and compliance requirements."
-      },
-      {
-        q: "Which of the following is a benefit of data monitoring in the lifecycle?",
-        options: [
-          "Tracking data pipeline health and performance",
-          "Drawing data",
-          "Encrypting data",
-          "Cooking data"
-        ],
-        answer: 0,
-        explanation: "Data monitoring helps track the health and performance of data pipelines."
-      },
-      {
-        q: "Which of the following is a key reason for data compliance in the lifecycle?",
-        options: [
-          "Adhering to legal and regulatory requirements",
-          "Faster data processing",
-          "More emails",
-          "Better handwriting"
-        ],
-        answer: 0,
-        explanation: "Data compliance ensures adherence to legal and regulatory requirements."
+        explanation: "A data warehouse is a system used for reporting and data analysis."
       },
       {
         q: "Which of the following is a data quality metric?",
         options: [
-          "Accuracy",
+          "Completeness",
           "Colorfulness",
           "Brightness",
           "Loudness"
         ],
         answer: 0,
-        explanation: "Accuracy is a key metric for data quality."
-      },
-      {
-        q: "Which of the following is a data processing step?",
-        options: [
-          "Filtering and aggregating data",
-          "Printing data",
-          "Drawing data",
-          "Encrypting data"
-        ],
-        answer: 0,
-        explanation: "Filtering and aggregating are common data processing steps."
-      },
-      {
-        q: "Which of the following is a benefit of using data pipelines?",
-        options: [
-          "Automated, reliable data movement",
-          "Manual data entry",
-          "Slower processing",
-          "Less data available"
-        ],
-        answer: 0,
-        explanation: "Data pipelines automate and ensure reliable data movement."
-      },
-      {
-        q: "Which of the following is a data consumer?",
-        options: [
-          "Business analyst",
-          "Data scientist",
-          "Executive",
-          "All of the above"
-        ],
-        answer: 3,
-        explanation: "All of these roles can be data consumers."
-      },
-      {
-        q: "Which of the following is a key feature of a data warehouse?",
-        options: [
-          "Optimized for analytical queries",
-          "Used for drawing",
-          "Stores only images",
-          "Used for sending emails"
-        ],
-        answer: 0,
-        explanation: "Data warehouses are optimized for analytical queries."
-      },
-      {
-        q: "Which of the following is a data integration tool?",
-        options: [
-          "Talend",
-          "Excel",
-          "Notepad",
-          "Paint"
-        ],
-        answer: 0,
-        explanation: "Talend is a popular data integration tool."
-      },
-      {
-        q: "Which of the following is a benefit of data governance?",
-        options: [
-          "Proper management and security of data",
-          "Faster internet",
-          "More emails",
-          "Better handwriting"
-        ],
-        answer: 0,
-        explanation: "Data governance ensures proper management and security of data."
+        explanation: "Completeness is a key metric for data quality."
       },
       {
         q: "Which of the following is a benefit of using cloud storage for data engineering?",
@@ -310,7 +125,49 @@ const quizzes = {
         ],
         answer: 0,
         explanation: "Cloud storage offers scalability and flexibility for data engineering."
-      }
+      },
+      // --- Additional unique questions for dataEngineering ---
+      {q: "Which of the following is a common data serialization format?", options: ["JSON", "JPEG", "MP3", "PDF"], answer: 0, explanation: "JSON (JavaScript Object Notation) is a widely used data serialization format."},
+      {q: "Which technology is often used for distributed storage?", options: ["Hadoop HDFS", "Microsoft Word", "PowerPoint", "Excel"], answer: 0, explanation: "Hadoop HDFS is a distributed file system for storing large data sets."},
+      {q: "What does ELT stand for in data engineering?", options: ["Extract, Load, Transform", "Encrypt, Load, Transfer", "Edit, Launch, Test", "Evaluate, Learn, Train"], answer: 0, explanation: "ELT stands for Extract, Load, Transform, a variant of ETL."},
+      {q: "Which of the following is a columnar database?", options: ["Amazon Redshift", "MySQL", "MongoDB", "Neo4j"], answer: 0, explanation: "Amazon Redshift is a columnar database optimized for analytics."},
+      {q: "Which tool is commonly used for workflow scheduling in data engineering?", options: ["Apache Airflow", "Adobe Illustrator", "Slack", "Zoom"], answer: 0, explanation: "Apache Airflow is used for scheduling and monitoring workflows."},
+      {q: "Which of the following is a benefit of using data pipelines?", options: ["Automated data movement", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Data pipelines automate the movement and transformation of data."},
+      {q: "Which language is often used for querying databases?", options: ["SQL", "HTML", "CSS", "JavaScript"], answer: 0, explanation: "SQL (Structured Query Language) is used to query databases."},
+      {q: "Which of the following is a NoSQL database?", options: ["MongoDB", "Oracle", "PostgreSQL", "SQLite"], answer: 0, explanation: "MongoDB is a popular NoSQL database."},
+      {q: "What is the main purpose of data modeling?", options: ["Defining data structure and relationships", "Drawing charts", "Encrypting data", "Sending emails"], answer: 0, explanation: "Data modeling defines how data is structured and related."},
+      {q: "Which of the following is a data integration tool?", options: ["Talend", "Photoshop", "Excel", "PowerPoint"], answer: 0, explanation: "Talend is a popular data integration tool."},
+      {q: "Which of the following is a benefit of data normalization?", options: ["Reduces data redundancy", "Increases data errors", "Slows down queries", "Makes data less accessible"], answer: 0, explanation: "Normalization reduces redundancy and improves data integrity."},
+      {q: "Which of the following is a distributed computing framework?", options: ["Apache Spark", "Microsoft Word", "Google Sheets", "Slack"], answer: 0, explanation: "Apache Spark is a distributed computing framework for big data."},
+      {q: "Which of the following is a data visualization tool?", options: ["Tableau", "Notepad", "VLC", "Paint"], answer: 0, explanation: "Tableau is a popular data visualization tool."},
+      {q: "Which of the following is a key concept in data warehousing?", options: ["Star schema", "Pie chart", "Bar graph", "Scatter plot"], answer: 0, explanation: "Star schema is a common data warehouse modeling technique."},
+      {q: "Which of the following is a benefit of using indexes in databases?", options: ["Faster query performance", "Slower data access", "Increased redundancy", "Less security"], answer: 0, explanation: "Indexes improve the speed of data retrieval."},
+      {q: "Which of the following is a message broker often used in data engineering?", options: ["Apache Kafka", "Photoshop", "Excel", "Slack"], answer: 0, explanation: "Apache Kafka is used for real-time data streaming and messaging."},
+      {q: "Which of the following is a cloud-based data warehouse?", options: ["Snowflake", "Paint", "Word", "Excel"], answer: 0, explanation: "Snowflake is a cloud-based data warehouse platform."},
+      {q: "Which of the following is a benefit of data caching?", options: ["Faster data retrieval", "Slower processing", "Increased latency", "Less reliability"], answer: 0, explanation: "Caching improves data retrieval speed."},
+      {q: "Which of the following is a common data format for big data?", options: ["Parquet", "PNG", "MP4", "DOCX"], answer: 0, explanation: "Parquet is a columnar storage file format for big data."},
+      {q: "Which of the following is a benefit of data deduplication?", options: ["Reduces storage requirements", "Increases redundancy", "Slows down queries", "Makes data less accessible"], answer: 0, explanation: "Deduplication removes duplicate data, saving storage."},
+      {q: "Which of the following is a common data ingestion tool?", options: ["Apache NiFi", "Photoshop", "Excel", "Slack"], answer: 0, explanation: "Apache NiFi is used for automating data flows."},
+      {q: "Which of the following is a benefit of data sharding?", options: ["Improved scalability", "Reduced security", "Slower queries", "Increased redundancy"], answer: 0, explanation: "Sharding improves scalability by splitting data across servers."},
+      {q: "Which of the following is a benefit of using cloud data platforms?", options: ["On-demand scalability", "Manual backups", "Limited access", "Slow performance"], answer: 0, explanation: "Cloud platforms offer on-demand scalability."},
+      {q: "Which of the following is a common use case for data lakes?", options: ["Storing raw, unstructured data", "Drawing charts", "Encrypting data", "Sending emails"], answer: 0, explanation: "Data lakes store raw, unstructured, or semi-structured data."},
+      {q: "Which of the following is a benefit of using batch processing?", options: ["Efficient processing of large data volumes", "Real-time analytics", "Manual data entry", "Slower processing"], answer: 0, explanation: "Batch processing is efficient for large data sets."},
+      {q: "Which of the following is a benefit of using stream processing?", options: ["Real-time data analysis", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Stream processing enables real-time analytics."},
+      {q: "Which of the following is a benefit of data masking?", options: ["Protects sensitive information", "Increases data errors", "Slows down queries", "Makes data less accessible"], answer: 0, explanation: "Data masking hides sensitive data."},
+      {q: "Which of the following is a benefit of using data catalogs?", options: ["Easier data discovery", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Data catalogs help users find and understand data assets."},
+      {q: "Which of the following is a benefit of using data lineage tools?", options: ["Tracking data flow and transformations", "Drawing charts", "Encrypting data", "Sending emails"], answer: 0, explanation: "Data lineage tools track data origins and changes."},
+      {q: "Which of the following is a benefit of using data quality tools?", options: ["Ensuring data accuracy and reliability", "Making data colorful", "Drawing charts", "Sending emails"], answer: 0, explanation: "Data quality tools help ensure data is accurate and reliable."},
+      {q: "Which of the following is a benefit of using data governance frameworks?", options: ["Ensuring compliance and security", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Data governance frameworks ensure compliance and security."},
+      {q: "Which of the following is a benefit of using data stewardship?", options: ["Improved data quality and management", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Data stewardship improves data quality and management."},
+      {q: "Which of the following is a benefit of using data profiling?", options: ["Understanding data structure and quality", "Drawing charts", "Encrypting data", "Sending emails"], answer: 0, explanation: "Data profiling helps understand data structure and quality."},
+      {q: "Which of the following is a benefit of using data anonymization?", options: ["Protects privacy while retaining data utility", "Increases data errors", "Slows down queries", "Makes data less accessible"], answer: 0, explanation: "Anonymization protects privacy while keeping data useful."},
+      {q: "Which of the following is a benefit of using data retention policies?", options: ["Defines how long data is stored", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Retention policies define how long data is kept."},
+      {q: "Which of the following is a benefit of using data archiving?", options: ["Reduces storage costs for infrequently accessed data", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Archiving reduces storage costs for old data."},
+      {q: "Which of the following is a benefit of using data validation?", options: ["Ensures data accuracy and consistency", "Making data colorful", "Drawing charts", "Sending emails"], answer: 0, explanation: "Validation checks that data is correct and consistent."},
+      {q: "Which of the following is a benefit of using data monitoring tools?", options: ["Track data pipeline health and performance", "Draw data", "Encrypt data", "Cook data"], answer: 0, explanation: "Monitoring tools help ensure data pipelines are working as expected."},
+      {q: "Which of the following is a benefit of a well-managed data lifecycle?", options: ["Reliable, high-quality data for decision making", "Slower reporting", "More manual work", "Less data available"], answer: 0, explanation: "A well-managed lifecycle ensures data is trustworthy and useful for business."},
+      {q: "Which of the following is a benefit of using data compliance frameworks?", options: ["Ensures adherence to legal and regulatory requirements", "Faster data processing", "More emails", "Better handwriting"], answer: 0, explanation: "Compliance frameworks ensure legal and regulatory adherence."}
+      // --- End additional dataEngineering questions ---
     ]
   },
 
@@ -427,7 +284,51 @@ const quizzes = {
         ],
         answer: 0,
         explanation: "Data quality tools help ensure data is accurate and reliable."
-      }
+      },
+      // --- Additional unique questions for ecosystem ---
+      {q: "Which open-source tool is commonly used for big data processing?", options: ["Apache Spark", "Microsoft Paint", "Google Docs", "Slack"], answer: 0, explanation: "Apache Spark is a popular open-source tool for big data processing."},
+      {q: "What is the main purpose of a data catalog in the ecosystem?", options: ["Organizing and managing metadata about data assets", "Sending emails", "Drawing diagrams", "Encrypting files"], answer: 0, explanation: "A data catalog helps organize and manage metadata for easier data discovery."},
+      {q: "Which technology is often used for real-time data streaming?", options: ["Apache Kafka", "Microsoft Word", "Excel", "PowerPoint"], answer: 0, explanation: "Apache Kafka is widely used for real-time data streaming."},
+      {q: "What is the role of a data steward in the ecosystem?", options: ["Ensuring data quality and governance", "Designing websites", "Managing payroll", "Writing novels"], answer: 0, explanation: "A data steward is responsible for data quality and governance."},
+      {q: "Which of the following is a benefit of using data orchestration tools?", options: ["Automating and managing data workflows", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Orchestration tools automate and manage data workflows."},
+      {q: "Which of the following is a benefit of using data versioning?", options: ["Tracking changes to datasets over time", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Data versioning tracks changes to datasets."},
+      {q: "Which of the following is a benefit of using data mesh architecture in the ecosystem?", options: ["Decentralized data ownership and responsibility", "Centralized data storage only", "Manual data entry", "Slower processing"], answer: 0, explanation: "Data mesh architecture promotes decentralized data ownership and responsibility."},
+      {q: "Which of the following is a benefit of using data observability tools in the ecosystem?", options: ["Proactive detection of data issues", "Drawing data", "Encrypting data", "Cooking data"], answer: 0, explanation: "Data observability tools help proactively detect data issues."},
+      {q: "Which of the following is a benefit of using data marts in the ecosystem?", options: ["Faster access to subject-specific data", "Drawing data", "Encrypting data", "Cooking data"], answer: 0, explanation: "Data marts provide faster access to subject-specific data."},
+      {q: "Which of the following is a benefit of using data orchestration tools in the ecosystem?", options: ["Coordinating complex data workflows", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Orchestration tools coordinate complex data workflows."},
+      {q: "Which of the following is a benefit of using data versioning in the ecosystem?", options: ["Reproducibility of data analysis", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Data versioning enables reproducibility of data analysis."},
+      {q: "Which of the following is a benefit of using data APIs in the ecosystem?", options: ["Automated data exchange between systems", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Data APIs automate data exchange between systems."},
+      {q: "Which of the following is a benefit of using data federation in the ecosystem?", options: ["Unified data access layer", "Drawing data", "Encrypting data", "Cooking data"], answer: 0, explanation: "Data federation provides a unified data access layer."},
+      {q: "Which of the following is a benefit of using metadata management tools in the ecosystem?", options: ["Improved data governance and compliance", "Slower data access", "More manual work", "Less data available"], answer: 0, explanation: "Metadata management tools improve data governance and compliance."},
+      {q: "Which of the following is a benefit of using ETL pipelines in the ecosystem?", options: ["Streamlined data processing", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "ETL pipelines streamline data processing."},
+      {q: "Which of the following is a benefit of using data integration tools in the ecosystem?", options: ["Seamless data consolidation", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Data integration tools enable seamless data consolidation."},
+      {q: "Which of the following is a benefit of using data governance frameworks in the ecosystem?", options: ["Standardized data management practices", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Data governance frameworks standardize data management practices."},
+      {q: "Which of the following is a benefit of using data stewardship in the ecosystem?", options: ["Accountability for data quality", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Data stewardship ensures accountability for data quality."},
+      {q: "Which of the following is a benefit of using data profiling in the ecosystem?", options: ["Early detection of data issues", "Drawing charts", "Encrypting data", "Sending emails"], answer: 0, explanation: "Data profiling enables early detection of data issues."},
+      {q: "Which of the following is a benefit of using data anonymization in the ecosystem?", options: ["Compliance with privacy regulations", "Increases data errors", "Slows down queries", "Makes data less accessible"], answer: 0, explanation: "Anonymization helps comply with privacy regulations."},
+      {q: "Which of the following is a benefit of using data retention policies in the ecosystem?", options: ["Regulatory compliance and cost control", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Retention policies support regulatory compliance and cost control."},
+      {q: "Which of the following is a benefit of using data archiving in the ecosystem?", options: ["Long-term preservation of historical data", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Archiving preserves historical data long-term."},
+      {q: "Which of the following is a benefit of using data validation in the ecosystem?", options: ["Reduced data errors and inconsistencies", "Making data colorful", "Drawing charts", "Sending emails"], answer: 0, explanation: "Validation reduces data errors and inconsistencies."},
+      {q: "Which of the following is a benefit of using data monitoring tools in the ecosystem?", options: ["Continuous oversight of data pipelines", "Draw data", "Encrypt data", "Cook data"], answer: 0, explanation: "Monitoring tools provide continuous oversight of data pipelines."},
+      {q: "Which of the following is a benefit of a well-managed data ecosystem?", options: ["Agility in responding to business needs", "Slower reporting", "More manual work", "Less data available"], answer: 0, explanation: "A well-managed ecosystem enables business agility."},
+      {q: "Which of the following is a benefit of using data compliance frameworks in the ecosystem?", options: ["Reduced risk of legal penalties", "Faster data processing", "More emails", "Better handwriting"], answer: 0, explanation: "Compliance frameworks reduce risk of legal penalties."},
+      {q: "Which of the following is a benefit of using data lineage tools in the ecosystem?", options: ["Transparency in data movement and transformation", "Drawing charts", "Encrypting data", "Sending emails"], answer: 0, explanation: "Data lineage tools provide transparency in data movement and transformation."},
+      {q: "Which of the following is a benefit of using data masking in the ecosystem?", options: ["Enhanced data privacy", "Increases data errors", "Slows down queries", "Makes data less accessible"], answer: 0, explanation: "Data masking enhances data privacy."},
+      {q: "Which of the following is a benefit of using data sharding in the ecosystem?", options: ["Scalable data storage and processing", "Reduced security", "Slower queries", "Increased redundancy"], answer: 0, explanation: "Sharding enables scalable data storage and processing."},
+      {q: "Which of the following is a benefit of using data caching in the ecosystem?", options: ["Reduced latency for frequent queries", "Slower processing", "Increased latency", "Less reliability"], answer: 0, explanation: "Caching reduces latency for frequent queries."},
+      {q: "Which of the following is a benefit of using data deduplication in the ecosystem?", options: ["Optimized storage usage", "Increases redundancy", "Slows down queries", "Makes data less accessible"], answer: 0, explanation: "Deduplication optimizes storage usage."},
+      {q: "Which of the following is a benefit of using cloud data platforms in the ecosystem?", options: ["Elastic resource allocation", "Manual backups", "Limited access", "Slow performance"], answer: 0, explanation: "Cloud platforms provide elastic resource allocation."},
+      {q: "Which of the following is a benefit of using batch processing in the ecosystem?", options: ["Cost-effective processing of large data sets", "Real-time analytics", "Manual data entry", "Slower processing"], answer: 0, explanation: "Batch processing is cost-effective for large data sets."},
+      {q: "Which of the following is a benefit of using stream processing in the ecosystem?", options: ["Immediate insights from data streams", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Stream processing provides immediate insights from data streams."},
+      {q: "Which of the following is a benefit of using data catalogs in the ecosystem?", options: ["Centralized metadata management", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Data catalogs centralize metadata management."},
+      {q: "Which of the following is a benefit of using data modeling?", options: ["Defining data structure and relationships", "Drawing charts", "Encrypting data", "Sending emails"], answer: 0, explanation: "Data modeling defines how data is structured and related."},
+      {q: "Which of the following is a benefit of using data integration tools?", options: ["Combining data from multiple sources", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Data integration tools combine data from multiple sources."},
+      {q: "Which of the following is a benefit of using data stewardship?", options: ["Improved data quality and management", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Data stewardship improves data quality and management."},
+      {q: "Which of the following is a benefit of using data profiling?", options: ["Understanding data structure and quality", "Drawing charts", "Encrypting data", "Sending emails"], answer: 0, explanation: "Data profiling helps understand data structure and quality."},
+      {q: "Which of the following is a benefit of using data anonymization?", options: ["Protects privacy while retaining data utility", "Increases data errors", "Slows down queries", "Makes data less accessible"], answer: 0, explanation: "Anonymization protects privacy while keeping data useful."},
+      {q: "Which of the following is a benefit of using data retention policies?", options: ["Defines how long data is stored", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Retention policies define how long data is kept."},
+      {q: "Which of the following is a benefit of using data archiving?", options: ["Reduces storage costs for infrequently accessed data", "Manual data entry", "Slower processing", "Less data available"], answer: 0, explanation: "Archiving reduces storage costs for old data."}
+      // --- End additional ecosystem questions ---
     ]
   },
   lifecycle: {
@@ -939,7 +840,13 @@ const quizzes = {
         ],
         answer: 0,
         explanation: "The lifecycle ensures data is managed so it can be trusted and used effectively."
-      }
+      },
+      // --- Additional unique questions for lifecycle ---
+      {q: "What is the purpose of data profiling in the lifecycle?", options: ["To analyze the structure, content, and quality of data", "To encrypt data", "To visualize data", "To delete data"], answer: 0, explanation: "Data profiling helps understand the structure, content, and quality of data."},
+      {q: "Which lifecycle phase focuses on ensuring data is accurate and consistent before use?", options: ["Data validation", "Data storage", "Data sharing", "Data masking"], answer: 0, explanation: "Data validation ensures data is accurate and consistent before it is used."},
+      {q: "What is the main goal of data archiving in the lifecycle?", options: ["To store infrequently accessed data cost-effectively", "To delete data", "To encrypt data", "To visualize data"], answer: 0, explanation: "Data archiving stores infrequently accessed data in a cost-effective way."},
+      {q: "Which activity is essential for protecting sensitive information during the lifecycle?", options: ["Data masking", "Data coloring", "Data gardening", "Data painting"], answer: 0, explanation: "Data masking is used to protect sensitive information."}
+      // --- End additional lifecycle questions ---
     ]
   }
 };
@@ -962,23 +869,10 @@ function shuffleArray(array) {
   return array;
 }
 
-// Ensure each topic has at least 50 questions by duplicating and shuffling if needed
-function ensureMinimumQuestions(questions, minCount = 50) {
-  let result = [...questions];
-  while (result.length < minCount) {
-    // Duplicate and shuffle a copy of the original questions
-    let toAdd = questions.map(q => ({ ...q, options: [...q.options] }));
-    shuffleArray(toAdd);
-    result = result.concat(toAdd);
-  }
-  // Trim to exactly minCount
-  return result.slice(0, minCount);
-}
-
 function startQuiz(topic) {
-  // Prepare questions: ensure at least 50 and randomize order
+  // Prepare questions: randomize order, no repeats
   const baseQuestions = quizzes[topic].questions;
-  randomizedQuestions = shuffleArray(ensureMinimumQuestions(baseQuestions));
+  randomizedQuestions = shuffleArray([...baseQuestions]);
   currentQuiz = { ...quizzes[topic], questions: randomizedQuestions };
   currentQuestion = 0;
   score = 0;
@@ -1008,7 +902,6 @@ function showQuestion() {
       ${options.map((opt, i) => `<button onclick="selectOption(${i})">${opt}</button>`).join('')}
     </div>
     <div class="quiz-controls">
-      <button onclick="prevQuestion()" ${currentQuestion === 0 ? 'disabled' : ''}>Previous</button>
       <button onclick="goHome()" style="margin-left:10px;">Back to Topics</button>
       <button onclick="nextQuestion()" id="nextBtn" disabled>Next</button>
     </div>
@@ -1050,12 +943,7 @@ function nextQuestion() {
   }
 }
 
-function prevQuestion() {
-  if (currentQuestion > 0) {
-    currentQuestion--;
-    showQuestion();
-  }
-}
+
 
 function showScore() {
   const container = document.getElementById('quiz-container');
