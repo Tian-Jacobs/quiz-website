@@ -881,6 +881,10 @@ function startQuiz(topic) {
   userAnswers = [];
   document.querySelector('.topics').style.display = 'none';
   document.getElementById('quiz-container').style.display = 'block';
+  // Show topic title
+  const topicTitleDiv = document.getElementById('topic-title');
+  topicTitleDiv.textContent = quizzes[topic].title;
+  topicTitleDiv.style.display = 'block';
   showQuestion();
 }
 
@@ -986,6 +990,8 @@ function restartQuiz() {
 function goHome() {
   document.getElementById('quiz-container').style.display = 'none';
   document.querySelector('.topics').style.display = 'flex';
+  // Hide topic title
+  document.getElementById('topic-title').style.display = 'none';
   randomizedOptions = [];
   randomizedAnswerIndex = [];
   randomizedQuestions = [];
