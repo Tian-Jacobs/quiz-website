@@ -9,9 +9,9 @@ const quizzes = {
         q: "What is the primary goal of data engineering?",
         options: [
           "To make quality data available for analysis and decision-making",
-          "To design user interfaces",
-          "To write documentation",
-          "To create marketing materials"
+          "To optimize data for marketing campaigns",
+          "To ensure data is only accessible to IT staff",
+          "To minimize the use of cloud storage"
         ],
         answer: 0,
         explanation: "The main goal of data engineering is to make quality data available for analysis and business decision-making."
@@ -21,8 +21,8 @@ const quizzes = {
         options: [
           "Extract, Transform, Load",
           "Encrypt, Transfer, Log",
-          "Edit, Test, Launch",
-          "Evaluate, Train, Learn"
+          "Evaluate, Test, Launch",
+          "Export, Transmit, Link"
         ],
         answer: 0,
         explanation: "ETL stands for Extract, Transform, Load, which are key steps in data integration."
@@ -31,9 +31,9 @@ const quizzes = {
         q: "Which tool is commonly used for data pipeline orchestration?",
         options: [
           "Apache Airflow",
-          "Microsoft Word",
-          "Adobe Photoshop",
-          "Google Chrome"
+          "Microsoft Project",
+          "Jupyter Notebook",
+          "Google Sheets"
         ],
         answer: 0,
         explanation: "Apache Airflow is a popular tool for orchestrating data pipelines."
@@ -42,9 +42,9 @@ const quizzes = {
         q: "What is data ingestion?",
         options: [
           "The process of collecting and importing data for use or storage",
-          "The process of deleting data",
-          "The process of encrypting data",
-          "The process of visualizing data"
+          "The process of archiving old data for compliance",
+          "The process of masking sensitive data for privacy",
+          "The process of generating synthetic data for testing"
         ],
         answer: 0,
         explanation: "Data ingestion is the process of collecting and importing data for use or storage."
@@ -53,9 +53,9 @@ const quizzes = {
         q: "Which of the following is a data storage technology?",
         options: [
           "Amazon S3",
-          "Microsoft Excel",
-          "Adobe Illustrator",
-          "Slack"
+          "Google Analytics",
+          "Jenkins",
+          "Figma"
         ],
         answer: 0,
         explanation: "Amazon S3 is a widely used data storage technology."
@@ -64,9 +64,9 @@ const quizzes = {
         q: "Which language is commonly used for data engineering tasks?",
         options: [
           "Python",
-          "French",
-          "HTML",
-          "CSS"
+          "JavaScript",
+          "SQL",
+          "Ruby"
         ],
         answer: 0,
         explanation: "Python is a popular language for data engineering tasks."
@@ -75,9 +75,9 @@ const quizzes = {
         q: "What is data transformation?",
         options: [
           "The process of converting data from one format or structure to another",
-          "The process of deleting data",
-          "The process of encrypting data",
-          "The process of visualizing data"
+          "The process of compressing data for storage savings",
+          "The process of anonymizing data for privacy",
+          "The process of streaming data in real time"
         ],
         answer: 0,
         explanation: "Data transformation is converting data from one format or structure to another."
@@ -86,9 +86,9 @@ const quizzes = {
         q: "Which of the following is a benefit of data partitioning?",
         options: [
           "Improved query performance and manageability",
-          "Increased data redundancy",
-          "Reduced data security",
-          "Slower data access"
+          "Increased data fragmentation and slower queries",
+          "Higher risk of data loss during backup",
+          "More complex data encryption requirements"
         ],
         answer: 0,
         explanation: "Data partitioning improves query performance and manageability."
@@ -179,9 +179,9 @@ const quizzes = {
         q: "Which of the following is a benefit of using data lakes in the ecosystem?",
         options: [
           "Storing large volumes of raw data in various formats",
-          "Manual data entry",
-          "Slower processing",
-          "Less data available"
+          "Improving data encryption for all files",
+          "Reducing the need for metadata management",
+          "Limiting access to only structured data"
         ],
         answer: 0,
         explanation: "Data lakes are ideal for storing large volumes of raw data in various formats."
@@ -190,9 +190,9 @@ const quizzes = {
         q: "Which of the following is a key benefit of data virtualization in the ecosystem?",
         options: [
           "Accessing data without moving it",
-          "Drawing data",
-          "Encrypting data",
-          "Cooking data"
+          "Increasing the number of data silos",
+          "Requiring all data to be stored in a single format",
+          "Reducing the need for data quality checks"
         ],
         answer: 0,
         explanation: "Data virtualization allows access to data without physically moving it."
@@ -201,9 +201,9 @@ const quizzes = {
         q: "Which of the following is a common use case for data marts?",
         options: [
           "Isolating data for a specific business function",
-          "Drawing data",
-          "Encrypting data",
-          "Cooking data"
+          "Combining all company data into a single table",
+          "Encrypting all data at rest",
+          "Storing only unstructured data"
         ],
         answer: 0,
         explanation: "Data marts are used to isolate data for a specific business function or department."
@@ -212,9 +212,9 @@ const quizzes = {
         q: "Which of the following is a benefit of using metadata management tools?",
         options: [
           "Easier data discovery and governance",
-          "Slower data access",
-          "More manual work",
-          "Less data available"
+          "Increased risk of data duplication",
+          "Reduced ability to track data lineage",
+          "More frequent manual data reconciliation"
         ],
         answer: 0,
         explanation: "Metadata management tools make it easier to discover and govern data assets."
@@ -223,9 +223,9 @@ const quizzes = {
         q: "Which of the following is a key feature of data mesh architecture?",
         options: [
           "Decentralized data ownership",
-          "Centralized data storage only",
-          "Manual data entry",
-          "Slower processing"
+          "Centralized control of all data access",
+          "Mandatory use of a single data warehouse",
+          "Exclusive reliance on batch processing"
         ],
         answer: 0,
         explanation: "Data mesh architecture promotes decentralized data ownership."
@@ -234,9 +234,9 @@ const quizzes = {
         q: "Which of the following is a benefit of using data observability tools?",
         options: [
           "Monitoring data health and quality",
-          "Drawing data",
-          "Encrypting data",
-          "Cooking data"
+          "Increasing the frequency of manual data checks",
+          "Reducing the need for data validation",
+          "Limiting monitoring to only structured data"
         ],
         answer: 0,
         explanation: "Data observability tools help monitor the health and quality of data."
@@ -245,9 +245,9 @@ const quizzes = {
         q: "Which of the following is a common data integration pattern?",
         options: [
           "ETL (Extract, Transform, Load)",
-          "Drawing data",
-          "Encrypting data",
-          "Cooking data"
+          "Manual data entry for each record",
+          "Encrypting all data before loading",
+          "Storing data in isolated silos"
         ],
         answer: 0,
         explanation: "ETL is a common data integration pattern."
@@ -256,9 +256,9 @@ const quizzes = {
         q: "Which of the following is a benefit of using data APIs in the ecosystem?",
         options: [
           "Real-time data access and integration",
-          "Manual data entry",
-          "Slower processing",
-          "Less data available"
+          "Increased latency for all requests",
+          "Manual synchronization of data sources",
+          "Restricting access to only batch data"
         ],
         answer: 0,
         explanation: "Data APIs enable real-time data access and integration."
@@ -267,9 +267,9 @@ const quizzes = {
         q: "Which of the following is a key benefit of data federation?",
         options: [
           "Querying multiple data sources as one",
-          "Drawing data",
-          "Encrypting data",
-          "Cooking data"
+          "Requiring all data to be physically merged",
+          "Limiting queries to a single database",
+          "Increasing the need for manual data reconciliation"
         ],
         answer: 0,
         explanation: "Data federation allows querying multiple data sources as if they were one."
@@ -278,9 +278,9 @@ const quizzes = {
         q: "Which of the following is a benefit of using data quality tools in the ecosystem?",
         options: [
           "Ensuring data accuracy and reliability",
-          "Making data colorful",
-          "Drawing charts",
-          "Sending emails"
+          "Increasing the number of data errors",
+          "Reducing the need for data validation",
+          "Making data less accessible to users"
         ],
         answer: 0,
         explanation: "Data quality tools help ensure data is accurate and reliable."
@@ -334,14 +334,13 @@ const quizzes = {
   lifecycle: {
     title: "The Data Engineering Lifecycle",
     questions: [
-      // 40 unique questions (not shown here for brevity)
-      // 10 new unique questions for lifecycle
+      // 10 new unique questions for lifecycle (with improved distractors)
       {
         q: "Which phase of the data lifecycle involves making data available to end users or applications?",
         options: [
           "Data Delivery",
-          "Data Acquisition",
-          "Data Profiling",
+          "Data Encryption",
+          "Data Backup",
           "Data Masking"
         ],
         answer: 0,
@@ -351,89 +350,89 @@ const quizzes = {
         q: "Which of the following is a key activity in the data retention phase?",
         options: [
           "Defining how long data should be stored",
-          "Drawing data",
-          "Encrypting data",
-          "Cooking data"
+          "Encrypting data for all users",
+          "Archiving data for compliance only",
+          "Masking data for analytics purposes"
         ],
         answer: 0,
         explanation: "Data retention involves defining how long data should be stored before deletion."
       },
       {
-        q: "Which of the following is a benefit of data archiving in the lifecycle?",
+        q: "Which of the following is a key benefit of automating the data lifecycle?",
         options: [
-          "Reducing storage costs for infrequently accessed data",
-          "Making data colorful",
-          "Drawing charts",
-          "Sending emails"
+          "Reduced manual intervention and errors",
+          "Increased need for manual data reconciliation",
+          "Greater risk of unauthorized data access",
+          "More frequent manual audits"
         ],
         answer: 0,
-        explanation: "Data archiving reduces storage costs for infrequently accessed data."
+        explanation: "Automation in the data lifecycle reduces manual intervention and errors."
       },
       {
         q: "Which of the following is a data cleansing activity?",
         options: [
           "Removing duplicate records",
-          "Drawing data",
-          "Encrypting data",
-          "Cooking data"
+          "Encrypting all records before storage",
+          "Archiving data for long-term retention",
+          "Masking all data fields for privacy"
         ],
         answer: 0,
         explanation: "Removing duplicate records is a common data cleansing activity."
       },
       {
-        q: "Which of the following is a benefit of data anonymization?",
+        q: "Which of the following is a key output of the data governance phase?",
         options: [
-          "Protecting sensitive information while retaining data utility",
-          "Making data colorful",
-          "Drawing charts",
-          "Sending emails"
+          "Defined data access policies and compliance requirements",
+          "Encrypted data for all users",
+          "Automated data masking for all records",
+          "Immediate data deletion after use"
         ],
         answer: 0,
-        explanation: "Data anonymization protects sensitive information while retaining data utility."
+        explanation: "The data governance phase outputs defined access policies and compliance requirements."
       },
       {
         q: "Which of the following is a key output of the data processing phase?",
         options: [
           "Transformed, analytics-ready data",
-          "Handwritten notes",
-          "Printed books",
-          "Colorful charts"
+          "Encrypted data for compliance",
+          "Archived data for long-term storage",
+          "Masked data for privacy"
         ],
         answer: 0,
         explanation: "The data processing phase produces transformed, analytics-ready data."
       },
       {
-        q: "Which of the following is a benefit of data validation in the lifecycle?",
+        q: "Which of the following is a benefit of data cataloging in the lifecycle?",
         options: [
-          "Ensuring data accuracy and consistency",
-          "Making data colorful",
-          "Drawing charts",
-          "Sending emails"
+          "Improved data discoverability and management",
+          "Increased difficulty in finding datasets",
+          "Reduced ability to track data lineage",
+          "More manual effort required to locate data"
         ],
         answer: 0,
-        explanation: "Data validation ensures that data is accurate and consistent."
+        explanation: "Data cataloging improves discoverability and management of data assets."
       },
       {
         q: "Which of the following is a data governance activity in the lifecycle?",
         options: [
           "Defining data access policies and compliance requirements",
-          "Drawing data",
-          "Encrypting data",
-          "Cooking data"
+          "Encrypting all data before sharing",
+          "Archiving data for compliance",
+          "Masking all data fields"
         ],
         answer: 0,
         explanation: "Data governance includes defining data access policies and compliance requirements."
       },
       {
-        q: "Which of the following is a benefit of data monitoring in the lifecycle?",
+        q: "Which of the following is a key activity in the data destruction phase?",
         options: [
-          "Tracking data pipeline health and performance",
-          "Drawing data",
-          "Encrypting data",
-          "Cooking data"
+          "Securely deleting data that is no longer needed",
+          "Encrypting data before deletion",
+          "Archiving all deleted data",
+          "Masking data for compliance purposes"
         ],
         answer: 0,
-        explanation: "Data monitoring helps track the health and performance of data pipelines."
+        explanation: "The data destruction phase involves securely deleting data that is no longer needed."
       },
       {
         q: "Which of the following is a key reason for data compliance in the lifecycle?",
